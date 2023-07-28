@@ -18,9 +18,14 @@ The application uses the encryption methods sha256 and ICP encode to produce a d
 
 ## Development
 
-The project runs on node js and utilizes the azle typescript program.
+The project runs on node js and [AZLE](https://demergent-labs.github.io/azle/the_azle_book.html). To test:
 
-- git clone repo
+- clone the repo
+
+```
+git clone https://github.com/Tamara-Ebi-Pere-Victor/Doc-Reg-CLI.git
+```
+
 - cd to server directory and install the dependencies
 
 ```
