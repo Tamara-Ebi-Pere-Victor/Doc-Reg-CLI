@@ -8,9 +8,8 @@ The application uses the encryption methods sha256 and ICP encode to produce a d
 
 ## Canister Parameters
 
-- Users have the ability to add documents to the contract and they can also delete the documents they added, provided they've opted in to the contract.
-- To add a document, user has to pay a fee of 1 algo.
-- To verify a document, user has to pay a fee of 0.1 algo
+- Users have the ability to add documents to the contract and they can also delete the documents they added.
+- Other users can verify if a document already exists on the registry.
 
 ## Use Cases
 
@@ -22,19 +21,38 @@ The application uses the encryption methods sha256 and ICP encode to produce a d
 The project runs on node js and utilizes the azle typescript program.
 
 - git clone repo
-- cd to server directory and run the following commands to start the icp canister.
+- cd to server directory and install the dependencies
+
+```
+npm install
+```
+
+- then run the following commands to start the icp canister.
 
 ```
     dfx start --background --clean
     dfx deploy
 ```
 
-- cd to the app directory and start the node js application to use.
-- there are files in the examples folder that you can use to test. `./examples/<file name>`
+- cd to the app directory and and install the dependencies 
 
+```
+npm install
+```
+
+- create a `.env` file with the following parameters
+
+```
+APP_CANISTER_ID=
+APP_USER_ID=
+```
+
+- Then run the command to start the node js application.
 ```
 npm start
 ```
+
+N/B: there are files in the examples folder that you can use to test. `./examples/<file name>`
 
 ### Commands Available
 
