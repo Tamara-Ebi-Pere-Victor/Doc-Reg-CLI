@@ -1,13 +1,13 @@
 {
   "canisters": {
-    "message_board": {
+    "document_registry": {
       "main": "src/index.ts",
       "type": "custom",
-      "build": "npx azle message_board",
+      "build": "npx azle document_registry",
       "root": "src",
       "ts": "src/index.ts",
       "candid": "src/index.did",
-      "wasm": ".azle/message_board/message_board.wasm.gz"
+      "wasm": ".azle/document_registry/document_registry.wasm.gz"
     }
   }
 }
