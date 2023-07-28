@@ -32,7 +32,7 @@ git clone https://github.com/Tamara-Ebi-Pere-Victor/Doc-Reg-CLI.git
 npm install
 ```
 
-- then run the following commands to start the icp canister.
+- then run the following commands to start the icp canister. take note of wallet canister and canister id of application
 
 ```
     dfx start --background --clean
@@ -45,7 +45,7 @@ npm install
 npm install
 ```
 
-- create a `.env` file with the following parameters
+- create a `.env` file with the following parameters gotten from the canister deployment.
 
 ```
 APP_CANISTER_ID=
